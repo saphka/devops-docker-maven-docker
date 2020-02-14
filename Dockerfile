@@ -15,3 +15,5 @@ RUN add-apt-repository \
 RUN apt-get update
 RUN apt-get install docker-ce docker-ce-cli containerd.io -y
 RUN docker version
+ENTRYPOINT ["dockerd"]
+CMD ["sh"]
