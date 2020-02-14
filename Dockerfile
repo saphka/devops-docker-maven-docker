@@ -1,5 +1,7 @@
 FROM maven:3.6.3-jdk-8
 
+ENV DOCKER_HOST=tcp://0.0.0.0:2375
+
 RUN apt-get update
 RUN apt-get install \
     apt-transport-https \
