@@ -14,5 +14,3 @@ RUN add-apt-repository \
    stable"
 RUN apt-get update
 RUN apt-get install docker-ce-cli -y
-RUN dockerd --version
-RUN docker --version
