@@ -14,3 +14,4 @@ RUN add-apt-repository \
    stable"
 RUN apt-get update
 RUN apt-get install docker-ce docker-ce-cli containerd.io -y
+ENTRYPOINT dockerd && /bin/bash
